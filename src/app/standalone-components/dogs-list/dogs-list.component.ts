@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import {DogsServiceService} from "../../services/dogs-service.service";
 import {Dog} from "../../models/dogs-model";
 import {Observable} from "rxjs";
+import {DogDetailsComponent} from "../dog-details/dog-details.component";
 
 @Component({
   selector: 'app-dogs-list',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, DogDetailsComponent],
   templateUrl: './dogs-list.component.html',
   styleUrls: ['./dogs-list.component.scss']
 })
